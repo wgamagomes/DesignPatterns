@@ -3,9 +3,9 @@ using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
 
 namespace Xpto.Behavioral.ChainOfResponsibility.Interfaces
 {
-    public interface INotification
+    public interface INotifier
     {
-        INotification Next { get; set; }
+        INotifier Next { get; set; }
 
         void Notify(Action<InfoValueObject> execute, InfoValueObject info);
     }
