@@ -5,15 +5,15 @@ using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
 
 namespace Xpto.Behavioral.ChainOfResponsibility.Notifiers
 {
-    public class BuyerAcceptanceNotifier : INotifier
+    public class SellerRefusalNotifier : INotifier
     {
         public INotifier Next { get; set; }
 
         public void Notify(Action<InfoValueObject> execute, InfoValueObject info)
         {
-            if (info.Status == Status.CustomerAcceptance)
+            if (info.Status == Status.SellerRefusal)
             {
-                info.Message = "Buyer Accepted your offer.";
+                info.Message = $"Dear {info.Name} the seller refuses your counter-proposal.";
                 execute(info);
             }
             else
