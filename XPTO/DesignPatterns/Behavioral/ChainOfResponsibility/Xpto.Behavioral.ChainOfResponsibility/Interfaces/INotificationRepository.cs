@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using Xpto.Behavioral.ChainOfResponsibility.Notification;
 
 namespace Xpto.Behavioral.ChainOfResponsibility.Interfaces
 {
-    interface INotificationRepository
+    public interface INotificationRepository
     {
+        void Insert(BaseNotification notificationBase);
+
+        IEnumerable<BaseNotification> GetAll();
+
+        void DeleteAll();
     }
 }
