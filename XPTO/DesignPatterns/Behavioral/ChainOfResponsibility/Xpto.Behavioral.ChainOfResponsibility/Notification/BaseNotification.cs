@@ -1,7 +1,7 @@
-﻿using Xpto.Behavioral.ChainOfResponsibility.Enums;
-using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
+﻿using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Enums;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.Notification
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Notification
 {
     public  abstract class BaseNotification
     {

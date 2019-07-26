@@ -1,7 +1,7 @@
 ﻿using System;
-using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.Interfaces
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Interfaces
 {
     public interface INotifier
     {

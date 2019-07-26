@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Xpto.Behavioral.ChainOfResponsibility.Interfaces;
-using Xpto.Behavioral.ChainOfResponsibility.Notification;
-using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Interfaces;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Notification;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject;
 
-namespace Xpto.Behavioral.ChainOfResponsibility
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility
 {
     public static class NotificationInitializer
     {

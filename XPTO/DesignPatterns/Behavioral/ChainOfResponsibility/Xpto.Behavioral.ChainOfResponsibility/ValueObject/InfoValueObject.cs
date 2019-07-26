@@ -1,6 +1,6 @@
-﻿using Xpto.Behavioral.ChainOfResponsibility.Enums;
+﻿using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Enums;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.ValueObject
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject
 {
     public class InfoValueObject
     {

@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
-using Xpto.Behavioral.ChainOfResponsibility.Enums;
-using Xpto.Behavioral.ChainOfResponsibility.Notification;
-using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Enums;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Notification;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.Test
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Test
 {
     public class ChainOfResponsibilityTest
     {

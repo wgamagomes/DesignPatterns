@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Xpto.Behavioral.ChainOfResponsibility.Interfaces;
-using Xpto.Behavioral.ChainOfResponsibility.Notification;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Interfaces;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Notification;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.Repositories
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Repositories
 {
     public class NotificationRepository : INotificationRepository
     {

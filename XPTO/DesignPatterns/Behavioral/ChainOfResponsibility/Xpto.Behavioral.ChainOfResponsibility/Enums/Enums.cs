@@ -1,4 +1,4 @@
-﻿namespace Xpto.Behavioral.ChainOfResponsibility.Enums
+﻿namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Enums
 {
     public enum NotificationType
     {

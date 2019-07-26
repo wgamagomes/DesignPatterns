@@ -1,9 +1,9 @@
 ﻿using System;
-using Xpto.Behavioral.ChainOfResponsibility.Enums;
-using Xpto.Behavioral.ChainOfResponsibility.Interfaces;
-using Xpto.Behavioral.ChainOfResponsibility.ValueObject;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Enums;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Interfaces;
+using Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.ValueObject;
 
-namespace Xpto.Behavioral.ChainOfResponsibility.Notifiers
+namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Notifiers
 {
     public class BuyerAcceptanceNotifier : INotifier
     {
