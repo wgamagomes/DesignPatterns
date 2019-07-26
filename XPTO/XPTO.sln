@@ -11,17 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{E9D77EEE-B0E7-49E8-8BC3-968A7D360B8E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResponsibility", "DesignPatterns\Behavioral\ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility.csproj", "{098B04AA-E52B-4BC5-BEBC-B23715D1C202}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResponsibility.Test", "DesignPatterns\Behavioral\ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility.Test\Xpto.Behavioral.ChainOfResponsibility.Test.csproj", "{41949767-F0FA-4833-85A2-3590410F9FF6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GangOfFourPatterns", "GangOfFourPatterns", "{51FFEC34-0804-4FD3-90A5-6A5FEAAE49A4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecificationDesignPattern", "SpecificationDesignPattern", "{2E799046-D6FD-45CF-89F6-57BEEAAF671B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpecificationPattern", "SpecificationPattern", "{2E799046-D6FD-45CF-89F6-57BEEAAF671B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xpto.SpecificationDesignPattern", "Xpto.SpecificationDesignPattern\Xpto.SpecificationDesignPattern.csproj", "{B3122B28-3FEB-4551-8270-A0330FB5166B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResponsibility", "DesignPatterns\GangOfFourPatterns\Behavioral\ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility.csproj", "{073D582B-7C83-413A-83DA-C32A31602505}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResponsibility.Test", "DesignPatterns\GangOfFourPatterns\Behavioral\ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility.Test\Xpto.Behavioral.ChainOfResponsibility.Test.csproj", "{9375E891-3E22-42E9-8719-09A14C100E7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +25,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{098B04AA-E52B-4BC5-BEBC-B23715D1C202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{098B04AA-E52B-4BC5-BEBC-B23715D1C202}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{098B04AA-E52B-4BC5-BEBC-B23715D1C202}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{098B04AA-E52B-4BC5-BEBC-B23715D1C202}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41949767-F0FA-4833-85A2-3590410F9FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41949767-F0FA-4833-85A2-3590410F9FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41949767-F0FA-4833-85A2-3590410F9FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41949767-F0FA-4833-85A2-3590410F9FF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3122B28-3FEB-4551-8270-A0330FB5166B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3122B28-3FEB-4551-8270-A0330FB5166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3122B28-3FEB-4551-8270-A0330FB5166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3122B28-3FEB-4551-8270-A0330FB5166B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073D582B-7C83-413A-83DA-C32A31602505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073D582B-7C83-413A-83DA-C32A31602505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073D582B-7C83-413A-83DA-C32A31602505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073D582B-7C83-413A-83DA-C32A31602505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9375E891-3E22-42E9-8719-09A14C100E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9375E891-3E22-42E9-8719-09A14C100E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9375E891-3E22-42E9-8719-09A14C100E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9375E891-3E22-42E9-8719-09A14C100E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,12 +41,10 @@ Global
 		{52D28BE0-288F-47CE-84B0-65BD856B3637} = {51FFEC34-0804-4FD3-90A5-6A5FEAAE49A4}
 		{704C4CD3-6D2A-497B-BBB2-560615360A2C} = {51FFEC34-0804-4FD3-90A5-6A5FEAAE49A4}
 		{E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD} = {51FFEC34-0804-4FD3-90A5-6A5FEAAE49A4}
-		{E9D77EEE-B0E7-49E8-8BC3-968A7D360B8E} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
-		{098B04AA-E52B-4BC5-BEBC-B23715D1C202} = {E9D77EEE-B0E7-49E8-8BC3-968A7D360B8E}
-		{41949767-F0FA-4833-85A2-3590410F9FF6} = {E9D77EEE-B0E7-49E8-8BC3-968A7D360B8E}
 		{51FFEC34-0804-4FD3-90A5-6A5FEAAE49A4} = {E22F5C3E-CFDA-42CD-BF9A-E41F03D7F28B}
 		{2E799046-D6FD-45CF-89F6-57BEEAAF671B} = {E22F5C3E-CFDA-42CD-BF9A-E41F03D7F28B}
-		{B3122B28-3FEB-4551-8270-A0330FB5166B} = {2E799046-D6FD-45CF-89F6-57BEEAAF671B}
+		{073D582B-7C83-413A-83DA-C32A31602505} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
+		{9375E891-3E22-42E9-8719-09A14C100E7F} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
