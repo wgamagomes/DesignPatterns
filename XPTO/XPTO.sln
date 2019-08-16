@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.ChainOfResponsibility.Test", "DesignPatterns\GangOfFourPatterns\Behavioral\ChainOfResponsibility\Xpto.Behavioral.ChainOfResponsibility.Test\Xpto.Behavioral.ChainOfResponsibility.Test.csproj", "{9375E891-3E22-42E9-8719-09A14C100E7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xpto.Behavioral.Strategy", "DesignPatterns\GangOfFourPatterns\Behavioral\Strategy\Xpto.Behavioral.Strategy\Xpto.Behavioral.Strategy.csproj", "{6052644B-99F5-486F-8006-75BA509DFBE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9375E891-3E22-42E9-8719-09A14C100E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9375E891-3E22-42E9-8719-09A14C100E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9375E891-3E22-42E9-8719-09A14C100E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6052644B-99F5-486F-8006-75BA509DFBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6052644B-99F5-486F-8006-75BA509DFBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6052644B-99F5-486F-8006-75BA509DFBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6052644B-99F5-486F-8006-75BA509DFBE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{2E799046-D6FD-45CF-89F6-57BEEAAF671B} = {E22F5C3E-CFDA-42CD-BF9A-E41F03D7F28B}
 		{073D582B-7C83-413A-83DA-C32A31602505} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
 		{9375E891-3E22-42E9-8719-09A14C100E7F} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
+		{6052644B-99F5-486F-8006-75BA509DFBE4} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
