@@ -1,6 +1,5 @@
 ﻿using Xpto.Behavioral.Strategy.Events;
 using Xpto.Behavioral.Strategy.Interfaces;
-using System;
 
 namespace Xpto.Behavioral.Strategy.Strategies
 {
@@ -13,9 +12,9 @@ namespace Xpto.Behavioral.Strategy.Strategies
             StrategyType = StrategyType.Advanced;
         }
 
-        public void Exec(Event @event)
+        public string Exec(Event @event)
         {
-            Console.WriteLine("Advanced Strategy");
+            return "Advanced Strategy";
         }
     }
 }
