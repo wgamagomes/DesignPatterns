@@ -2,7 +2,7 @@
 {
     public class EnemyShipSimpleFactory
     {
-        public EnemyShip makeEnemyShip(string newShipType)
+        public EnemyShip MakeEnemyShip(string newShipType)
         {
             EnemyShip newShip = null;
 
