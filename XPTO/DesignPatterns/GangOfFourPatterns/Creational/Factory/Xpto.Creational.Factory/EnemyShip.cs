@@ -2,9 +2,9 @@
 {
     public abstract class EnemyShip
     {
-        public string Name { get; private set; }
+        public string Name { get; protected set; }
 
-        public double Damage { get; private set; }
+        public double Damage { get; protected set; }
 
         public string FollowHeroShip()
         {
