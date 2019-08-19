@@ -12,7 +12,6 @@ namespace Xpto.Creational.Factory
         {
             get
             {
-
                 if (_enemyShipList == null)
                 {
                     _enemyShipList = AppDomain
