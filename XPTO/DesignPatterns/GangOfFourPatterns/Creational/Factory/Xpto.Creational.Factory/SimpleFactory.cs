@@ -1,6 +1,6 @@
 ﻿namespace Xpto.Creational.Factory
 {
-    public class EnemyShipSimpleFactory
+    public class SimpleFactory
     {
         public EnemyShip MakeEnemyShip(string newShipType)
         {

@@ -6,6 +6,7 @@
         {
             Name = "Rocket Enemy Ship";
             Damage = 10.0;
+            ShipType = "R";
         }
     }
 }

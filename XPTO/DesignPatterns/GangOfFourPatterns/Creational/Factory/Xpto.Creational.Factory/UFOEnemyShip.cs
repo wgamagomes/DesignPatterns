@@ -6,6 +6,7 @@
         {
             Name = "UFO Enemy Ship";
             Damage = 20.0;
+            ShipType = "U";
         }
     }
 }

@@ -2,6 +2,8 @@
 {
     public abstract class EnemyShip
     {
+        public string ShipType { get; protected set; } 
+
         public string Name { get; protected set; }
 
         public double Damage { get; protected set; }

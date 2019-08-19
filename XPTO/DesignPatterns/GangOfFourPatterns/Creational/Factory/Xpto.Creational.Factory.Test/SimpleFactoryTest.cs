@@ -5,12 +5,12 @@ namespace Xpto.Creational.Factory.Test
 {
     public class SimpleFactoryTest
     {
-        private EnemyShipSimpleFactory _simpleFactory;
+        private SimpleFactory _simpleFactory;
 
         [SetUp]
         public void Setup()
         {
-            _simpleFactory = new EnemyShipSimpleFactory();
+            _simpleFactory = new SimpleFactory();
         }
 
         [Test]
