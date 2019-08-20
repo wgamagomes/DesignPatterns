@@ -12,8 +12,4 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Xpto.Creational.Factory\Xpto.Creational.Factory.csproj" />
-  </ItemGroup>
-
 </Project>
