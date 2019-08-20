@@ -2,6 +2,6 @@
 {
     public abstract class ProductBBase
     {
-        public abstract void Interact(ProductABase product);
+        public abstract string Interact(ProductABase product);
     }
 }

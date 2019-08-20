@@ -2,9 +2,9 @@
 {
     public class ProductB1 : ProductBBase
     {
-        public override void Interact(ProductABase product)
+        public override string Interact(ProductABase product)
         {
-            throw new System.NotImplementedException();
+            return $"{GetType().Name} interacts with {product.GetType().Name}";            
         }
     }
 }
