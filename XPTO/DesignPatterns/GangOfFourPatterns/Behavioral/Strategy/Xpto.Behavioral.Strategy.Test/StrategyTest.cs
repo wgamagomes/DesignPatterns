@@ -16,7 +16,7 @@ namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Test
         }
 
         [Test]
-        public void Shoud_Be_Basic_Strategy()
+        public void Should_Be_Basic_Strategy()
         {
             var @event = new Event { StrategyType = StrategyType.Basic };
 
@@ -26,7 +26,7 @@ namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Test
         }
 
         [Test]
-        public void Shoud_Be_Intermediate_Strategy()
+        public void Should_Be_Intermediate_Strategy()
         {
             var @event = new Event { StrategyType = StrategyType.Intermediate };
 
@@ -36,7 +36,7 @@ namespace Xpto.GangOfFourPatterns.Behavioral.ChainOfResponsibility.Test
         }
 
         [Test]
-        public void Shoud_Be_Advanced_Strategy()
+        public void Should_Be_Advanced_Strategy()
         {
             var @event = new Event { StrategyType = StrategyType.Advanced };
 
