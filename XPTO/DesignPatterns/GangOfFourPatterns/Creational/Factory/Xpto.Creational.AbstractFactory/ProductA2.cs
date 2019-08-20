@@ -1,6 +1,6 @@
 ﻿namespace Xpto.Creational.AbstractFactory
 {
-    public class ProductA
+    public class ProductA2: ProductABase
     {
     }
 }

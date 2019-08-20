@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Xpto.Creational.AbstractFactory
+﻿namespace Xpto.Creational.AbstractFactory
 {
-    class AbstractFactory
+    public interface IFactory
     {
+          ProductABase CreateProductA();
+          ProductBBase CreateProductB();
     }
 }
