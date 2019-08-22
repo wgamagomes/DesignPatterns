@@ -1,4 +1,5 @@
 ﻿using System;
+using Xpto.SpecificationPattern.Specifications;
 
 namespace Xpto.SpecificationPattern.Test
 {
@@ -13,6 +14,11 @@ namespace Xpto.SpecificationPattern.Test
         public string Genre { get; }
 
         public double Rating { get; }
+
+        public ExpressionSpecification<Movie> IsEligibleForChildren()
+        {
+            return new ExpressionSpecification<Movie>(m => m.MpaaRating == MpaaRating.G);
+        }
     }
 
     public enum MpaaRating
