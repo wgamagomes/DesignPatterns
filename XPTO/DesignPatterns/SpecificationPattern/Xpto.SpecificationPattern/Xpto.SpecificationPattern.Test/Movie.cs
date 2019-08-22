@@ -5,17 +5,17 @@ namespace Xpto.SpecificationPattern.Test
 {
     public class Movie
     {
-        public string Name { get; }
+        public string Name { get; set; }
 
-        public DateTime ReleaseDate { get; }
+        public DateTime ReleaseDate { get; set; }
 
-        public MpaaRating MpaaRating { get; }
+        public MpaaRating MpaaRating { get; set; }
 
-        public string Genre { get; }
+        public string Genre { get; set; }
 
-        public double Rating { get; }
+        public double Rating { get; set; }
 
-        public ExpressionSpecification<Movie> IsEligibleForChildren()
+        public static ExpressionSpecification<Movie> IsEligibleForChildren()
         {
             return new ExpressionSpecification<Movie>(m => m.MpaaRating == MpaaRating.G);
         }
