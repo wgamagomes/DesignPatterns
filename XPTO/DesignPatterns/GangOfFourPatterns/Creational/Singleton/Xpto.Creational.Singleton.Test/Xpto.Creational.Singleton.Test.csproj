@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Xpto.Creational.Factory\Xpto.Creational.Factory.csproj" />
+    <ProjectReference Include="..\Xpto.Creational.Singleton\Xpto.Creational.Singleton.csproj" />
   </ItemGroup>
 
 </Project>

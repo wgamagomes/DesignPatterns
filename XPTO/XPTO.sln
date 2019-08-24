@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.SpecificationPattern",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.SpecificationPattern.Test", "DesignPatterns\SpecificationPattern\Xpto.SpecificationPattern\Xpto.SpecificationPattern.Test\Xpto.SpecificationPattern.Test.csproj", "{0EC929F0-B7E9-449A-8E08-3CBC8433299F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Creational.Singleton", "DesignPatterns\GangOfFourPatterns\Creational\Factory\Xpto.Creational.Singleton\Xpto.Creational.Singleton.csproj", "{46E9CB5B-C641-4AB2-BB6A-892373319A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Creational.Singleton", "DesignPatterns\GangOfFourPatterns\Creational\Singleton\Xpto.Creational.Singleton\Xpto.Creational.Singleton.csproj", "{0324163E-1132-4654-8094-4C8C1F1D5443}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Creational.Singleton.Test", "DesignPatterns\GangOfFourPatterns\Creational\Singleton\Xpto.Creational.Singleton.Test\Xpto.Creational.Singleton.Test.csproj", "{41531DC6-CCB7-42F2-B02B-26448737F3EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,10 +85,14 @@ Global
 		{0EC929F0-B7E9-449A-8E08-3CBC8433299F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EC929F0-B7E9-449A-8E08-3CBC8433299F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EC929F0-B7E9-449A-8E08-3CBC8433299F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46E9CB5B-C641-4AB2-BB6A-892373319A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46E9CB5B-C641-4AB2-BB6A-892373319A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46E9CB5B-C641-4AB2-BB6A-892373319A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46E9CB5B-C641-4AB2-BB6A-892373319A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0324163E-1132-4654-8094-4C8C1F1D5443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0324163E-1132-4654-8094-4C8C1F1D5443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0324163E-1132-4654-8094-4C8C1F1D5443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0324163E-1132-4654-8094-4C8C1F1D5443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41531DC6-CCB7-42F2-B02B-26448737F3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41531DC6-CCB7-42F2-B02B-26448737F3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41531DC6-CCB7-42F2-B02B-26448737F3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41531DC6-CCB7-42F2-B02B-26448737F3EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,7 +113,8 @@ Global
 		{E32932F9-E1C3-46CC-ADFA-36BD384E56C5} = {704C4CD3-6D2A-497B-BBB2-560615360A2C}
 		{98F280BB-5037-43A2-A891-6A54B5861167} = {2E799046-D6FD-45CF-89F6-57BEEAAF671B}
 		{0EC929F0-B7E9-449A-8E08-3CBC8433299F} = {2E799046-D6FD-45CF-89F6-57BEEAAF671B}
-		{46E9CB5B-C641-4AB2-BB6A-892373319A6C} = {704C4CD3-6D2A-497B-BBB2-560615360A2C}
+		{0324163E-1132-4654-8094-4C8C1F1D5443} = {704C4CD3-6D2A-497B-BBB2-560615360A2C}
+		{41531DC6-CCB7-42F2-B02B-26448737F3EF} = {704C4CD3-6D2A-497B-BBB2-560615360A2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
