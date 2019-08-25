@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Xpto.Behavioral.Strategy\Xpto.Behavioral.Strategy.csproj" />
+    <ProjectReference Include="..\Xpto.Behavioral.Command\Xpto.Behavioral.Command.csproj" />
   </ItemGroup>
 
 </Project>
