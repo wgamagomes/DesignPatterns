@@ -11,9 +11,9 @@ namespace Xpto.Behavioral.Command
             this._command = command;
         }
 
-        public void ExecuteCommand()
+        public string ExecuteCommand()
         {
-            _command.Execute();
+            return _command.Execute();
         }
     }
 }

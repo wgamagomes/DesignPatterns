@@ -17,9 +17,14 @@ namespace Xpto.GangOfFourPatterns.Behavioral.Command.Test
         [Test]
         public void Should_Do_Something()
         {
-            //Receiver receiver = new Receiver();
-            //CommandBase command = new ConcreteCommand(receiver);
-            //Invoker invoker = new Invoker();
+            Receiver receiver = new Receiver();
+            CommandBase command = new ConcreteCommand(receiver);
+            Invoker invoker = new Invoker();
+
+            invoker.SetCommand(command);
+            invoker.ExecuteCommand().
+                Should()
+                .Be("Called Receiver.Action()");
 
         }       
     }

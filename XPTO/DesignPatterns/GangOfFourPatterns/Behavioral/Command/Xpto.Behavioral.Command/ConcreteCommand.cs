@@ -13,9 +13,9 @@ namespace Xpto.Behavioral.Command
 
         }
 
-        public override void Execute()
+        public override string Execute()
         {
-            receiver.Action();
+            return receiver.Action();
         }
     }
 }

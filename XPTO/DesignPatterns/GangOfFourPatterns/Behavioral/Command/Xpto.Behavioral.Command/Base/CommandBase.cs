@@ -10,6 +10,6 @@
             this.receiver = receiver;
         }
 
-        public abstract void Execute();
+        public abstract string Execute();
     }
 }
