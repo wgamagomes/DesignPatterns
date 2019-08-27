@@ -2,6 +2,7 @@
 
 namespace Xpto.Behavioral.Command.ModifyProductPrice
 {
+    //Receiver class
     public class Product
     {
         public string Name { get; set; }

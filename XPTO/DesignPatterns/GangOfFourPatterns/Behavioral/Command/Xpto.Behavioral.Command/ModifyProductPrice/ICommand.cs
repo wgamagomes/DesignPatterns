@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Xpto.Behavioral.Command.ModifyProductPrice
+﻿namespace Xpto.Behavioral.Command.ModifyProductPrice
 {
-    interface ICommand
+    public interface ICommand
     {
+        void ExecuteAction();
     }
 }

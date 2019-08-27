@@ -1,5 +1,6 @@
 ﻿namespace Xpto.Behavioral.Command.ModifyProductPrice
 {
+    //Command class
     public class ProductCommand : ICommand
     {
         private readonly Product _product;
