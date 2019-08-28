@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Xpto.Behavioral.Command;
 using Xpto.Behavioral.Command.Base;
+using Xpto.Behavioral.Command.Calculator;
 using Xpto.Behavioral.Command.ModifyProductPrice;
 
 namespace Xpto.GangOfFourPatterns.Behavioral.Command.Test
@@ -58,6 +59,35 @@ namespace Xpto.GangOfFourPatterns.Behavioral.Command.Test
             modifyPriceInvolker.Invoke();
 
             product.ToString().Should().Be("Current price for the Phone product is 200$.");
+        }
+
+
+        [Test]
+        public void Should_Add_Value()
+        {
+            CalculatorInvoker calculatorInvolker = new CalculatorInvoker();
+
+            var calculator = new Calculator(3, 4);
+
+            var command = new AddCommand(calculator);
+
+           var result = calculatorInvolker.ExecuteCommand(command);
+
+            result.Should().Be(7);
+        }
+
+        [Test]
+        public void Should_Subtract_Value()
+        {
+            CalculatorInvoker calculatorInvolker = new CalculatorInvoker();
+
+            var calculator = new Calculator(3, 4);
+
+            var command = new SubtractCommand(calculator);
+
+            var result = calculatorInvolker.ExecuteCommand(command);
+
+            result.Should().Be(-1);
         }
 
     }

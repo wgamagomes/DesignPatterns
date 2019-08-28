@@ -1,6 +1,6 @@
 ﻿namespace Xpto.Behavioral.Command.Calculator
 {
-    public class AddCommand
+    public class AddCommand: ICommand
     {
         private Calculator _calculator;
 

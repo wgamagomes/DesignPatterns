@@ -1,6 +1,6 @@
 ﻿namespace Xpto.Behavioral.Command.Calculator
 {
-    public class Invoker
+    public class CalculatorInvoker
     {
         public int ExecuteCommand(ICommand command)
         {
