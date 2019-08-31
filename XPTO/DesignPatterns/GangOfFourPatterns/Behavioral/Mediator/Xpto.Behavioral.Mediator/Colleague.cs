@@ -4,12 +4,11 @@ namespace Xpto.Behavioral.Mediator
 {
     public class Colleague
     {
-
-        Mediator mediator;
+        Mediator _mediator;
         protected string name;
         public Colleague(Mediator mediator, string name)
         {
-            this.mediator = mediator;
+            this._mediator = mediator;
             mediator.SignOn(Receive);
             this.name = name;
         }
@@ -17,9 +16,11 @@ namespace Xpto.Behavioral.Mediator
         {
             Console.WriteLine(name + " received from " + from + ": " + message);
         }
-        public void Send(string message) { Console.WriteLine("Send (From " + name + "): " + message);
+        public void Send(string message)
+        {
+            Console.WriteLine("Send (From " + name + "): " + message);
 
-           // mediator.Send(message, name);
+            _mediator.Send(message, name);
         }
     }
 }
