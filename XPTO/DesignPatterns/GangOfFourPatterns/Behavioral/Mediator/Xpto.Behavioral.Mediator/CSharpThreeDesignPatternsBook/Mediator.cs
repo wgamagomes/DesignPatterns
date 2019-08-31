@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xpto.Behavioral.Mediator
+namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
 {
     /// <summary>
     /// The Mediator pattern is there to enable objects to 

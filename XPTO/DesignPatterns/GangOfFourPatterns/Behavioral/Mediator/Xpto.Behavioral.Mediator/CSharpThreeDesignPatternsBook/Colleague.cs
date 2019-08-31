@@ -1,7 +1,10 @@
 ﻿using System;
 
-namespace Xpto.Behavioral.Mediator
+namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
 {
+    /// <summary>
+    /// Registers with a Mediator by supplying a Receive method; issues Send requests to other colleagues via the Mediator 
+    /// </summary>
     public class Colleague
     {
         Mediator _mediator;
