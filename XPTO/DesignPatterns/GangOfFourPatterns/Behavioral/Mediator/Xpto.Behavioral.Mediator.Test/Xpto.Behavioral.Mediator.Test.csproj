@@ -12,4 +12,8 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Xpto.Behavioral.Mediator\Xpto.Behavioral.Mediator.csproj" />
+  </ItemGroup>
+
 </Project>
