@@ -48,23 +48,23 @@ namespace Xpto.Behavioral.Mediator.Test
             _mediator.Block(_branch.Receive); // temporarily gets no messages 
             _head1.Send("Still awaiting some Acks");
             _head1.ReceivedMessage.Should().BeEmpty();
-            _branch.ReceivedMessage.Should().Be("David received from John: Still awaiting some Acks");
+            _branch.ReceivedMessage.Should().BeNull();
             _head2.ReceivedMessage.Should().Be("Lucy received from John: Still awaiting some Acks");
 
         }
 
         [Test]
-        public void Should_Unblock_Messages()
+        public void Should_Unblock_David_Gets_Messages()
         {
-
-
-            _head1.Send("Meeting on Tuesday, please all ack");
-            _branch.Send("Ack"); // by design does not get a copy 
             _mediator.Block(_branch.Receive); // temporarily gets no messages 
             _head1.Send("Still awaiting some Acks");
-            _head2.Send("Ack");
+
             _mediator.Unblock(_branch.Receive); // open again 
             _head1.Send("Thanks all");
+
+            _head1.ReceivedMessage.Should().BeEmpty();
+            _branch.ReceivedMessage.Should().Be("David received from John: Thanks all");
+            _head2.ReceivedMessage.Should().Be("Lucy received from John: Thanks all");
         }
     }
 }
