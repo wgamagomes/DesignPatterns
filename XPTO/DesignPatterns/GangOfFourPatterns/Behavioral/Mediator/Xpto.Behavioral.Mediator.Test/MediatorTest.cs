@@ -23,7 +23,7 @@ namespace Xpto.Behavioral.Mediator.Test
         }
 
         [Test]
-        public void Should_Send_Meeting_Message()
+        public void Should_Head1_Send_Meeting_Message()
         {
             _head1.Send("Meeting on Tuesday, please all ack");
 
@@ -32,24 +32,31 @@ namespace Xpto.Behavioral.Mediator.Test
             _head2.ReceivedMessage.Should().Be("Lucy received from John: Meeting on Tuesday, please all ack");
         }
 
-        // _branch.Send("Ack"); // by design does not get a copy 
+        [Test]
+        public void Should_Branch_Send_Ack_Message()
+        {
+            _branch.Send("Ack");
 
+            _branch.ReceivedMessage.Should().BeEmpty();
+            _head1.ReceivedMessage.Should().Be("David received from David: Ack");
+            _head2.ReceivedMessage.Should().Be("Lucy received from David: Ack");
+        }
 
         [Test]
         public void Should_Block_Messages()
         {
-          
+
 
             _head1.Send("Meeting on Tuesday, please all ack");
             _branch.Send("Ack"); // by design does not get a copy 
             _mediator.Block(_branch.Receive); // temporarily gets no messages 
-            _head1.Send("Still awaiting some Acks");           
+            _head1.Send("Still awaiting some Acks");
         }
 
         [Test]
         public void Should_Unblock_Messages()
         {
-       
+
 
             _head1.Send("Meeting on Tuesday, please all ack");
             _branch.Send("Ack"); // by design does not get a copy 
