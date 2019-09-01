@@ -11,6 +11,7 @@ namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
     {
         public delegate void Callback(string message, string from);
 
+        //Broadcasts sent messages to all signed-on Colleagues using the Respond delegate
         private Callback _respond;
 
         public void SignOn(Callback method)
