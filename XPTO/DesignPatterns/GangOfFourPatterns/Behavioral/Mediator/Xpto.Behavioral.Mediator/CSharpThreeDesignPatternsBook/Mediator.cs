@@ -30,8 +30,7 @@ namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
         // Send is implemented as a broadcast 30         
         public void Send(string message, string from)
         {
-            _respond(message, from);
-            Console.WriteLine();
+            _respond(message, from);           
         }
     }
 }

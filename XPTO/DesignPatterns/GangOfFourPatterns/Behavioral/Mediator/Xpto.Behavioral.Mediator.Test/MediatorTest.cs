@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using FluentAssertions;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -22,14 +23,17 @@ namespace Xpto.Behavioral.Mediator.Test
         }
 
         [Test]
-        public void Should_Send_Message()
+        public void Should_Send_Meeting_Message()
         {
- 
-
             _head1.Send("Meeting on Tuesday, please all ack");
-            _branch.Send("Ack"); // by design does not get a copy 
-           
+
+            _head1.ReceivedMessage.Should().BeEmpty();
+            _branch.ReceivedMessage.Should().Be("David received from John: Meeting on Tuesday, please all ack");
+            _head2.ReceivedMessage.Should().Be("Lucy received from John: Meeting on Tuesday, please all ack");
         }
+
+        // _branch.Send("Ack"); // by design does not get a copy 
+
 
         [Test]
         public void Should_Block_Messages()

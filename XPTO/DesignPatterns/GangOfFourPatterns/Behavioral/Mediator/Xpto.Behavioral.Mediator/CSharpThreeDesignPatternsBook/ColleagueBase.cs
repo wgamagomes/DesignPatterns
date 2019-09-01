@@ -16,13 +16,9 @@ namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
             this.name = name;
         }
         public abstract void Receive(string message, string from);
-        //{
-        //    Console.WriteLine(name + " received from " + from + ": " + message);
-        //}
+
         public void Send(string message)
         {
-            Console.WriteLine("Send (From " + name + "): " + message);
-
             _mediator.Send(message, name);
         }
     }

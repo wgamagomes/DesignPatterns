@@ -9,12 +9,16 @@ namespace Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook
         {
 
         }
+        public string ReceivedMessage { get; private set; }
 
         // Does not get copies of own messages 
         public override void Receive(string message, string from)
         {
+            ReceivedMessage = string.Empty;
             if (!string.Equals(from, name))
-                Console.WriteLine(name + " received from " + from + ": " + message);
+            {
+                ReceivedMessage = name + " received from " + from + ": " + message;
+            }
         }
     }
 }
