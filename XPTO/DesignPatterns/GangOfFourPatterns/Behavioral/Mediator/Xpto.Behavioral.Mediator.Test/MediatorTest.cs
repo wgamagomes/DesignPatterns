@@ -7,54 +7,53 @@ namespace Xpto.Behavioral.Mediator.Test
 {
     class MediatorTest
     {
+        private CSharpThreeDesignPatternsBook.Mediator _mediator;
+        private Colleague _head1;
+        private Colleague _branch;
+        private Colleague _head2;
+
         [SetUp]
         public void Setup()
         {
-
+            _mediator = new CSharpThreeDesignPatternsBook.Mediator();// Two from head office and one from a branch office 
+            _head1 = new Colleague(_mediator, "John");
+            _branch = new Colleague(_mediator, "David");
+            _head2 = new Colleague(_mediator, "Lucy");
         }
 
         [Test]
         public void Should_Send_Message()
         {
-            CSharpThreeDesignPatternsBook.Mediator m = new CSharpThreeDesignPatternsBook.Mediator();// Two from head office and one from a branch office 
-            Colleague head1 = new Colleague(m, "John");
-            Colleague branch1 = new Colleague(m, "David");
-            Colleague head2 = new Colleague(m, "Lucy");
+ 
 
-            head1.Send("Meeting on Tuesday, please all ack");
-            branch1.Send("Ack"); // by design does not get a copy 
+            _head1.Send("Meeting on Tuesday, please all ack");
+            _branch.Send("Ack"); // by design does not get a copy 
            
         }
 
         [Test]
         public void Should_Block_Messages()
         {
-            CSharpThreeDesignPatternsBook.Mediator m = new CSharpThreeDesignPatternsBook.Mediator();// Two from head office and one from a branch office 
-            Colleague head1 = new Colleague(m, "John");
-            Colleague branch1 = new Colleague(m, "David");
-            Colleague head2 = new Colleague(m, "Lucy");
+          
 
-            head1.Send("Meeting on Tuesday, please all ack");
-            branch1.Send("Ack"); // by design does not get a copy 
-            m.Block(branch1.Receive); // temporarily gets no messages 
-            head1.Send("Still awaiting some Acks");           
+            _head1.Send("Meeting on Tuesday, please all ack");
+            _branch.Send("Ack"); // by design does not get a copy 
+            _mediator.Block(_branch.Receive); // temporarily gets no messages 
+            _head1.Send("Still awaiting some Acks");           
         }
 
         [Test]
         public void Should_Unblock_Messages()
         {
-            CSharpThreeDesignPatternsBook.Mediator m = new CSharpThreeDesignPatternsBook.Mediator();// Two from head office and one from a branch office 
-            Colleague head1 = new Colleague(m, "John");
-            Colleague branch1 = new Colleague(m, "David");
-            Colleague head2 = new Colleague(m, "Lucy");
+       
 
-            head1.Send("Meeting on Tuesday, please all ack");
-            branch1.Send("Ack"); // by design does not get a copy 
-            m.Block(branch1.Receive); // temporarily gets no messages 
-            head1.Send("Still awaiting some Acks");
-            head2.Send("Ack");
-            m.Unblock(branch1.Receive); // open again 
-            head1.Send("Thanks all");
+            _head1.Send("Meeting on Tuesday, please all ack");
+            _branch.Send("Ack"); // by design does not get a copy 
+            _mediator.Block(_branch.Receive); // temporarily gets no messages 
+            _head1.Send("Still awaiting some Acks");
+            _head2.Send("Ack");
+            _mediator.Unblock(_branch.Receive); // open again 
+            _head1.Send("Thanks all");
         }
     }
 }
