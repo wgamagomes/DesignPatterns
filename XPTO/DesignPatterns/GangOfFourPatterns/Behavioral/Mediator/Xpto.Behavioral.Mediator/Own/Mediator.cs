@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Xpto.Behavioral.Mediator.Own
 {
-    public class Mediator : IMediator
+    public class Mediator<TEvent> : IMediator<TEvent>
+        where TEvent : IEvent
     {
-        public void Publish(string message)
+        public void Publish(TEvent @event)
         {
-            throw new NotImplementedException();
+            foreach (var handler in Factory<IEventHandler<TEvent>>.GetRequestHandlers)
+            {
+                handler.Handle(@event);
+            }
         }
     }
 }
+

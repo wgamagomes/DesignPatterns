@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Xpto.Behavioral.Mediator.Own
+﻿namespace Xpto.Behavioral.Mediator.Own
 {
-    interface IMediator
+    public interface IMediator<TEvent>
+        where TEvent: IEvent
     {
+        void Publish(TEvent @event);
     }
 }
