@@ -1,18 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using Xpto.Behavioral.Mediator.Own.Interfaces;
 
 namespace Xpto.Behavioral.Mediator.Own
 {
-    public class Mediator<TEvent> : IMediator<TEvent>
-        where TEvent : IEvent
+    public class Mediator : IMediator
     {
-        public void Publish(TEvent @event)
+        public void Publish<TNotification>(TNotification notification)
+             where TNotification : INotification
         {
-            foreach (var handler in Factory<IEventHandler<TEvent>>.GetRequestHandlers)
+            foreach (var handler in Factory<INotificationHandler<TNotification>>.GetHandlers)
             {
-                handler.Handle(@event);
+                handler.Handle(notification);
             }
+        }
+
+        public void Send<TRequest>(TRequest request)
+            where TRequest : IRequest
+
+        {
+            var handlers = Factory<IRequestHandler<TRequest>>.GetHandlers;
+
+            if (handlers.Count > 1)
+                throw new Exception();
+
+            handlers[0].Handle(request);
+
+        }
+
+        public TResult Send<TRequest, TResult>(TRequest request)
+            where TRequest : IRequest<TResult>
+
+        {
+
+            var handlers = Factory<IRequestHandler<TRequest, TResult>>.GetHandlers;
+
+            if (handlers.Count > 1)
+                throw new Exception();
+
+            return handlers[0].Handle(request);
+
         }
     }
 }

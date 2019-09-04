@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook;
+using Xpto.Behavioral.Mediator.Own;
+
 namespace Xpto.Behavioral.Mediator.Test
 {
     class MediatorTest
@@ -65,6 +67,18 @@ namespace Xpto.Behavioral.Mediator.Test
             _head1.ReceivedMessage.Should().BeEmpty();
             _branch.ReceivedMessage.Should().Be("David received from John: Thanks all");
             _head2.ReceivedMessage.Should().Be("Lucy received from John: Thanks all");
+        }
+
+
+        [Test]
+        public void Should_Send_Event_To_Handlers()
+        {
+            var @event = new WhateverNotification("Ack");
+            var mediator = new Own.Mediator();
+            mediator.Publish(@event);
+
+            WhateverNotificationHandler.ReceivedMessage.Should().Be("Ack");
+            OtherNotificationHandler.ReceivedMessage.Should().Be("Ack");
         }
     }
 }

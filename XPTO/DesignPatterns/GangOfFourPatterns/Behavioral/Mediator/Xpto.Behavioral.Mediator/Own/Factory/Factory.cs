@@ -8,7 +8,7 @@ namespace Xpto.Behavioral.Mediator.Own
     {
         private static List<THandler> _handlers;
 
-        public static List<THandler> GetRequestHandlers
+        public static List<THandler> GetHandlers
         {
             get
             {
@@ -18,7 +18,7 @@ namespace Xpto.Behavioral.Mediator.Own
                         .CurrentDomain
                         .GetAssemblies()
                         .SelectMany(assembly => assembly.GetTypes().Where(type => type.IsClass && !type.IsAbstract && typeof(THandler).IsAssignableFrom(type))
-                        .Select(enemyShip => (THandler)Activator.CreateInstance(enemyShip)))
+                        .Select(handlerType => (THandler)Activator.CreateInstance(handlerType)))
                         .ToList();
                 }
 
