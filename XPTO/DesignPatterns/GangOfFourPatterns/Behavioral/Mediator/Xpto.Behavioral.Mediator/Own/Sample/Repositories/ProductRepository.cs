@@ -13,16 +13,30 @@ namespace Xpto.Behavioral.Mediator.Own.Sample.Repositories
             Products = new List<Product>();
         }
 
-        void Insert(Product product)
+        public void Insert(Product product)
         {
-            Products.Add(product); 
+            Products.Add(product);
         }
 
-        List<Product> Get(Func<Product,bool> predicate)
+        public List<Product> Get(Func<Product, bool> predicate)
         {
             return Products
                     .Where(predicate)
                     .ToList();
         }
+
+        public void Delete(Func<Product, bool> predicate)
+        {
+            var result = Products
+                    .Where(predicate)
+                    .ToList();
+
+            foreach (var prod in result)
+            {
+                Products.Remove(prod);
+            }
+        }
+
+
     }
 }
