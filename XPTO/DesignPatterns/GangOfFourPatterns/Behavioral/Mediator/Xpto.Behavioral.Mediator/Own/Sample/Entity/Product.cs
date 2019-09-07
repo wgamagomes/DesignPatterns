@@ -8,6 +8,8 @@ namespace Xpto.Behavioral.Mediator.Own.Sample
     {
         public decimal Price { get; set; }
 
+        public string Description { get; set; }
+
         public Guid Id { get; set; }
 
         public Product()

@@ -37,6 +37,17 @@ namespace Xpto.Behavioral.Mediator.Own.Sample.Repositories
             }
         }
 
+        public void Update(Guid id, decimal price, string description)
+        {
+            var foundProduct = Products
+                    .Where(p=>p.Id == id)
+                    .First();
+
+            foundProduct.Price = price;
+            foundProduct.Description = description;
+
+        }
+
 
     }
 }
