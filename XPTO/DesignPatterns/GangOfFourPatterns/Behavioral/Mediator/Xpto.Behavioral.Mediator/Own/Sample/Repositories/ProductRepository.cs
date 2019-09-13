@@ -10,7 +10,8 @@ namespace Xpto.Behavioral.Mediator.Own.Sample.Repositories
 
         public ProductRepository()
         {
-            Products = new List<Product>();
+            if (Products == null)
+                Products = new List<Product>();
         }
 
         public void Insert(Product product)
@@ -37,17 +38,14 @@ namespace Xpto.Behavioral.Mediator.Own.Sample.Repositories
             }
         }
 
-        public void Update(Guid id, decimal price, string description)
+        public void Update(Product product)
         {
             var foundProduct = Products
-                    .Where(p=>p.Id == id)
+                    .Where(p => p.Id == product.Id)
                     .First();
 
-            foundProduct.Price = price;
-            foundProduct.Description = description;
-
+            foundProduct.Price = product.Price;
+            foundProduct.AlterDescription(product.Description);
         }
-
-
     }
 }
