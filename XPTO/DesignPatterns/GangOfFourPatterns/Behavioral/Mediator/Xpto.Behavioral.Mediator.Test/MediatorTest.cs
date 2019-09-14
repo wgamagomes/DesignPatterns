@@ -2,9 +2,13 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xpto.Behavioral.Mediator.CSharpThreeDesignPatternsBook;
 using Xpto.Behavioral.Mediator.Own;
+using Xpto.Behavioral.Mediator.Own.Sample;
+using Xpto.Behavioral.Mediator.Own.Sample.Repositories;
+using Xpto.Behavioral.Mediator.Own.Sample.Request;
 
 namespace Xpto.Behavioral.Mediator.Test
 {
@@ -79,6 +83,25 @@ namespace Xpto.Behavioral.Mediator.Test
 
             WhateverNotificationHandler.ReceivedMessage.Should().Be("Ack");
             OtherNotificationHandler.ReceivedMessage.Should().Be("Ack");
+        }
+
+
+
+        [Test]
+        public void Should_Buy_Product()
+        {
+            var product = new Product("Product A", 10, 5.0);
+            var productRepository = new ProductRepository();
+            productRepository.Insert(product);
+
+            var request = new ProductBuyerRequest(product.Id, 2);
+            var mediator = new Own.Mediator();
+
+            mediator.Send(request);
+
+            product = productRepository.Get(p => p.Id == product.Id).FirstOrDefault();
+
+            product.Quantity.Should().Be(8);
         }
     }
 }
