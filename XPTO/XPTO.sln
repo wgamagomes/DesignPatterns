@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Behavioral.Mediator.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Structural.Decorator", "DesignPatterns\GangOfFourPatterns\Structural\Xpto.Structural.Decorator\Xpto.Structural.Decorator.csproj", "{781178AF-E82D-4F3E-9EB1-0FB6B7238323}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xpto.Structural.Decorator.Test", "DesignPatterns\GangOfFourPatterns\Structural\Xpto.Structural.Decorator.Test\Xpto.Structural.Decorator.Test.csproj", "{0A1C155C-D0E8-4728-89C5-EAE86FD09710}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{781178AF-E82D-4F3E-9EB1-0FB6B7238323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{781178AF-E82D-4F3E-9EB1-0FB6B7238323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{781178AF-E82D-4F3E-9EB1-0FB6B7238323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1C155C-D0E8-4728-89C5-EAE86FD09710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1C155C-D0E8-4728-89C5-EAE86FD09710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1C155C-D0E8-4728-89C5-EAE86FD09710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1C155C-D0E8-4728-89C5-EAE86FD09710}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -150,6 +156,7 @@ Global
 		{E84B67F4-8CF4-4898-BAB9-4D8FFABB274E} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
 		{97F38C00-35EC-446F-B6C8-E07B2ED348A5} = {E6DBA119-ADB6-4AA4-8861-03ECF7C3E9AD}
 		{781178AF-E82D-4F3E-9EB1-0FB6B7238323} = {52D28BE0-288F-47CE-84B0-65BD856B3637}
+		{0A1C155C-D0E8-4728-89C5-EAE86FD09710} = {52D28BE0-288F-47CE-84B0-65BD856B3637}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
