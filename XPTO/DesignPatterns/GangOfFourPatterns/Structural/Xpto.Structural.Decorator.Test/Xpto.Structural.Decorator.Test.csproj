@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -10,10 +10,6 @@
     <PackageReference Include="Moq" Version="4.11.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Xpto.Creational.Singleton\Xpto.Creational.Singleton.csproj" />
   </ItemGroup>
 
 </Project>
