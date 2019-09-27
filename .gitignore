@@ -48,3 +48,6 @@
 /XPTO/DesignPatterns/GangOfFourPatterns/Behavioral/Mediator/Xpto.Behavioral.Mediator/obj
 bin
 obj
+/XPTO/.vs/XPTO/*
+/XPTO/.vs/XPTO/v16
+/XPTO/.vs/XPTO/DesignTimeBuild
