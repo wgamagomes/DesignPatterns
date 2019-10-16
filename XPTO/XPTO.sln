@@ -59,11 +59,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI", "AI", "{2B42E836-7820-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ArtificialNeuralNetwork", "ArtificialNeuralNetwork", "{ACABDD72-86C9-43A0-8BA1-C36BD04BB0C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtificialNeuralNetwork.Perceptron", "AI\ArtificialNeuralNetwork\ArtificialNeuralNetwork.Perceptron\ArtificialNeuralNetwork.Perceptron.csproj", "{C4249BEE-7ED3-4A9C-9A13-690F39668EFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtificialNeuralNetwork.Perceptron", "AI\ArtificialNeuralNetwork\ArtificialNeuralNetwork.Perceptron\ArtificialNeuralNetwork.Perceptron.csproj", "{C4249BEE-7ED3-4A9C-9A13-690F39668EFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SustainableFleet", "SustainableFleet", "{B19D494A-328C-4631-A39C-AEDC65879CFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainableFleet.Data", "SustainableFleet\SustainableFleet.Data\SustainableFleet.Data.csproj", "{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainableFleet.Data", "SustainableFleet\SustainableFleet.Data\SustainableFleet.Data.csproj", "{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainNotification", "DomainNotification", "{DD838DF5-358F-44A5-8C59-5CA55E6932A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainNotification.Domain", "DomainNotification\DomainNotification.Domain\DomainNotification.Domain.csproj", "{BE97C2A5-821A-411D-B13C-424F09B50D35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +159,10 @@ Global
 		{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE97C2A5-821A-411D-B13C-424F09B50D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE97C2A5-821A-411D-B13C-424F09B50D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE97C2A5-821A-411D-B13C-424F09B50D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE97C2A5-821A-411D-B13C-424F09B50D35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -187,6 +195,7 @@ Global
 		{ACABDD72-86C9-43A0-8BA1-C36BD04BB0C9} = {2B42E836-7820-405A-AC16-5F9F66C16B4A}
 		{C4249BEE-7ED3-4A9C-9A13-690F39668EFC} = {ACABDD72-86C9-43A0-8BA1-C36BD04BB0C9}
 		{3442DFBE-FB19-4137-9741-CC1D2A19B5A7} = {B19D494A-328C-4631-A39C-AEDC65879CFF}
+		{BE97C2A5-821A-411D-B13C-424F09B50D35} = {DD838DF5-358F-44A5-8C59-5CA55E6932A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
