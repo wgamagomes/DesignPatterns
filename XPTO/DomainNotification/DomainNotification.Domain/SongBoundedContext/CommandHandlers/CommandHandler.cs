@@ -6,15 +6,14 @@ using DomainNotification.Domain.Core.Notifications;
 
 namespace DomainNotification.Domain.CommandHandlers
 {
-    class CommandHandler
+    public class CommandHandler
     {
         private IUnitOfWork _unitOfWork;
         private IMediatorHandler _bus;
         private IDomainNotificationHandler _notifications;
 
-        public CommandHandler(IUnitOfWork unitOfWork, IMediatorHandler bus, IDomainNotificationHandler notifications)
-        {
-            _unitOfWork = unitOfWork;
+        public CommandHandler(IMediatorHandler bus, IDomainNotificationHandler notifications)
+        {           
             _bus = bus;
             _notifications = notifications;
         }
