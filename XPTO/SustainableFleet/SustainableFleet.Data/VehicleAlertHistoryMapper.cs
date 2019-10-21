@@ -1,18 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Text;
 
 namespace SustainableFleet.Data
 {
     public class VehicleAlertHistoryMapper
     {
-        public static string Mapper(string[] splited)
+        public static Tuple<string, SqlParameter[]> Mapper(string[] splited)
         {
             var datetimeConcated = splited[17] + " " + splited[18];
             DateTime? datetime = datetimeConcated == "- -" ? null : (DateTime?)DateTime.Parse(datetimeConcated);
 
             var datetimeformated = datetime == null ? null : ((DateTime)(datetime)).ToString();
-                                 
+
+            SqlParameter param = new System.Data.SqlClient.SqlParameter();
+            param.ParameterName = "@Data";
+
+
+            param.Value = (datetimeConcated == "- -" ? null : (DateTime?)DateTime.Parse(datetimeConcated));
+
+            param.Value = param.Value ?? DBNull.Value;
+
+            var sqlParameters = new SqlParameter[] { param };
+
+
             var query = $@"INSERT INTO [dbo].[VehicleAlertHistory]
            ([Guid]
            ,[Plate]
@@ -54,11 +66,11 @@ namespace SustainableFleet.Data
            ,'{splited[14]}'
            ,'{splited[15]}'
            ,'{splited[16]}'
-           ,{datetimeformated}
+           ,@Data
            ,'{splited[19]}'
            ,'{splited[20]}')";
 
-            return query;
+            return new Tuple<string, SqlParameter[]>(query, sqlParameters);
 
         }
     }

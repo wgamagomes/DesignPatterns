@@ -13,19 +13,20 @@ namespace SustainableFleet.Data
         {
             _connectionString = connectionString;
         }
-        private void Insert(string query, SqlConnection conn)
+        private void Insert(Tuple<string, SqlParameter[]> tuple, SqlConnection conn)
         {
-            SqlCommand myCommand = new SqlCommand(query, conn);
+            SqlCommand myCommand = new SqlCommand(tuple.Item1, conn);
+            myCommand.Parameters.AddRange(tuple.Item2);
             myCommand.ExecuteNonQuery();
         }
 
-        public void Insert(string filePath, int len, Func<string[], string> mapper)
+        public void Insert(string filePath, int len, Func<string[], Tuple<string, SqlParameter[]>> mapper)
         {
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
 
-                var query = "";
+                Tuple<string, SqlParameter[]> result = null;
 
                 foreach (var csvRow in CsvReader.Reader(filePath))
                 {
@@ -34,9 +35,9 @@ namespace SustainableFleet.Data
                         if (csvRow.Length != len)
                             throw new Exception("len error");
 
-                         query = mapper(csvRow);
+                        result = mapper(csvRow);
 
-                        Insert(query, conn);
+                        Insert(result, conn);
                     }
                     catch (Exception ex)
                     {

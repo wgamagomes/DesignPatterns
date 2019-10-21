@@ -20,8 +20,10 @@ namespace SustainableFleet.Data
                     content.Split("\n")
                 );
             }
-            foreach (var value in rowList)
+            for (int i = 1; i < rowList.Count-1; i++)
             {
+                var value = rowList[i];
+
                 var sanitized = Sanitize(value);
 
                 var splited = sanitized.Split(";");
