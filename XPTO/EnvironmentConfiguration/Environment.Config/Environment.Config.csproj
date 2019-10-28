@@ -8,6 +8,8 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="2.0.0-preview-010050001-38" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
   </ItemGroup>
 
 </Project>

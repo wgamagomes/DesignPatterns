@@ -18,7 +18,7 @@ namespace SustainableFleet.Data
             //dataHandler.Insert(file, 21, VehicleAlertHistoryMapper.Mapper);
 
 
-            var file = @"C:\Users\wellington.gomes\Desktop\POC Abril\Consumos\2019-04-12.csv";
+            var file = @"C:\Users\wellington.gomes\Desktop\POC Abril\Consumos\2019-04-14.csv";
 
             DataHandler dataHandler = new DataHandler(@"Server=NT-03338\SQLEXPRESS;Database=AmbevSustainableFleet;Trusted_Connection=True;");
 

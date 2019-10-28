@@ -6,7 +6,7 @@ namespace Environment.Config
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var x = AppEnviroment.GetEnviromentConfigurationSettings();
         }
     }
 }

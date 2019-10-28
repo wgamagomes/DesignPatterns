@@ -67,9 +67,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainableFleet.Data", "Su
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainNotification", "DomainNotification", "{DD838DF5-358F-44A5-8C59-5CA55E6932A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainNotification.Domain", "DomainNotification\DomainNotification.Domain\DomainNotification.Domain.csproj", "{BE97C2A5-821A-411D-B13C-424F09B50D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainNotification.Domain", "DomainNotification\DomainNotification.Domain\DomainNotification.Domain.csproj", "{BE97C2A5-821A-411D-B13C-424F09B50D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainNotification.Application", "DomainNotification\DomainNotification.Application\DomainNotification.Application.csproj", "{AB97D64F-3989-4DB7-835B-8C34D667BBB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainNotification.Application", "DomainNotification\DomainNotification.Application\DomainNotification.Application.csproj", "{AB97D64F-3989-4DB7-835B-8C34D667BBB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{94389CD3-884E-4B49-AAD0-E99F5F6B448E}"
 EndProject
@@ -77,7 +77,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5744AE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3889AA59-72E9-482A-AC11-28E1127E3174}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainNotification.Prompt", "DomainNotification\DomainNotification.Prompt\DomainNotification.Prompt.csproj", "{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainNotification.Prompt", "DomainNotification\DomainNotification.Prompt\DomainNotification.Prompt.csproj", "{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnvironmentConfiguration", "EnvironmentConfiguration", "{7EB6E6BC-AD82-4781-8D30-34D17EF5EC2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment.Config", "EnvironmentConfiguration\Environment.Config\Environment.Config.csproj", "{59DA3003-C540-481E-B860-7D4F7BA016A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,10 @@ Global
 		{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -219,6 +227,7 @@ Global
 		{5744AE9D-17F4-46CB-A814-E0DFD5E51FAF} = {DD838DF5-358F-44A5-8C59-5CA55E6932A2}
 		{3889AA59-72E9-482A-AC11-28E1127E3174} = {DD838DF5-358F-44A5-8C59-5CA55E6932A2}
 		{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF} = {3889AA59-72E9-482A-AC11-28E1127E3174}
+		{59DA3003-C540-481E-B860-7D4F7BA016A6} = {7EB6E6BC-AD82-4781-8D30-34D17EF5EC2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}
