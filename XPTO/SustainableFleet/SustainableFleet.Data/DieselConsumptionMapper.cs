@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-namespace SustainableFleet.Data
+namespace SustainableFleet.Cmd
 {
     public class DieselConsumptionMapper
     {

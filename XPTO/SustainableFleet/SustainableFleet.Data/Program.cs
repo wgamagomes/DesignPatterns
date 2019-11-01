@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Threading;
 
-namespace SustainableFleet.Data
+namespace SustainableFleet.Cmd
 {
     class Program
     {

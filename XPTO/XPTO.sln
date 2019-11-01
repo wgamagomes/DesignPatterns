@@ -63,7 +63,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArtificialNeuralNetwork.Per
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SustainableFleet", "SustainableFleet", "{B19D494A-328C-4631-A39C-AEDC65879CFF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainableFleet.Data", "SustainableFleet\SustainableFleet.Data\SustainableFleet.Data.csproj", "{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainableFleet.Cmd", "SustainableFleet\SustainableFleet.Data\SustainableFleet.Cmd.csproj", "{3442DFBE-FB19-4137-9741-CC1D2A19B5A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainNotification", "DomainNotification", "{DD838DF5-358F-44A5-8C59-5CA55E6932A2}"
 EndProject
@@ -81,7 +81,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainNotification.Prompt",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnvironmentConfiguration", "EnvironmentConfiguration", "{7EB6E6BC-AD82-4781-8D30-34D17EF5EC2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environment.Config", "EnvironmentConfiguration\Environment.Config\Environment.Config.csproj", "{59DA3003-C540-481E-B860-7D4F7BA016A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environment.Config", "EnvironmentConfiguration\Environment.Config\Environment.Config.csproj", "{59DA3003-C540-481E-B860-7D4F7BA016A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SoftwareArchitecture", "SoftwareArchitecture", "{9A5FF9F8-C227-4188-8C4F-D99358D55893}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XPTO.SoftwareArchitecture", "SoftwareArchitecture\XPTO.SoftwareArchitecture\XPTO.SoftwareArchitecture.csproj", "{C4D38478-C802-47FF-86BB-13C7BBA42D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containers", "Containers", "{D14A88F1-CEF3-4474-83FF-5000021F6414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +195,10 @@ Global
 		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59DA3003-C540-481E-B860-7D4F7BA016A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4D38478-C802-47FF-86BB-13C7BBA42D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4D38478-C802-47FF-86BB-13C7BBA42D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4D38478-C802-47FF-86BB-13C7BBA42D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4D38478-C802-47FF-86BB-13C7BBA42D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +238,8 @@ Global
 		{3889AA59-72E9-482A-AC11-28E1127E3174} = {DD838DF5-358F-44A5-8C59-5CA55E6932A2}
 		{A7F957B1-F2CC-4DD7-8250-0485A0C69CEF} = {3889AA59-72E9-482A-AC11-28E1127E3174}
 		{59DA3003-C540-481E-B860-7D4F7BA016A6} = {7EB6E6BC-AD82-4781-8D30-34D17EF5EC2C}
+		{C4D38478-C802-47FF-86BB-13C7BBA42D00} = {9A5FF9F8-C227-4188-8C4F-D99358D55893}
+		{D14A88F1-CEF3-4474-83FF-5000021F6414} = {B19D494A-328C-4631-A39C-AEDC65879CFF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {099215F5-F7FB-47F9-AE69-B08390FFDEC0}

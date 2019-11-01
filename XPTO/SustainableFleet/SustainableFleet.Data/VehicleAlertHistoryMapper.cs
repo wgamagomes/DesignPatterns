@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace SustainableFleet.Data
+namespace SustainableFleet.Cmd
 {
     public class VehicleAlertHistoryMapper
     {
